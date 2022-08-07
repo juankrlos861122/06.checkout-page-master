@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page Master | devChallenges.io</title>
+
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="icon" href="./images/shopping-cart-icon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+</head>
+<body>
+  <main>
+    <h1>Checkout</h1>
+    <section class="shopping-cart">
+      <div class="cart-product">
+        <img src="./images/photo1.png" alt="">
+        <h3>Vintage Backbag</h3>
+        <p>$54.99</p>
+        <s>$94.99</s>
+        <div class="number-input">
+          <a onclick="this.parentNode.querySelector('.quantity').stepDown()" >
+            <span class="material-symbols-outlined">remove_circle</span>
+          </a>
+          <input class="quantity" min="0" name="quantity" value="1" type="number">
+          <a onclick="this.parentNode.querySelector('.quantity').stepUp()" class="plus">
+            <span class="material-symbols-outlined">add_circle</span>
+          </a>
+        </div>
+      </div>
+      <div class="cart-product">
+        <img src="./images/photo2.png" alt="">
+        <h3>Levi Shoes</h3>
+        <p>$74.99</p>
+        <s>$74.99</s>
+        <div class="number-input">
+          <a onclick="this.parentNode.querySelector('.quantity').stepDown()" >
+            <span class="material-symbols-outlined remove">remove_circle</span>
+          </a>
+          <input class="quantity" min="0" name="quantity" value="1" type="number">
+          <a onclick="this.parentNode.querySelector('.quantity').stepUp()" class="plus">
+            <span class="material-symbols-outlined plus">add_circle</span>
+          </a>
+        </div>
+      </div>
+      <div class="cart-shipping">
+        <p>Shipping</p>
+        <p>$19</p>
+      </div>
+      <div class="cart-total">
+        <p>Total</p>
+        <p>$148.98</p>
+      </div>
+    </section>
+
+    <section class="form-shopping">
+      <form>
+        <div class="contact-information">
+          <h2>Contact infomation</h2>
+          <label for="email">E-mail</label>
+          <div class="input-text">
+            <span class="material-symbols-outlined email">
+              email
+            </span>
+            <input id="email" type="text" placeholder="Enter your Email ..." />
+          </div>
+
+          <label for="phone">Phone</label>
+          <div class="input-text">
+            <span class="material-symbols-outlined phone">
+              phone
+            </span>
+            <input id="phone" type="tel" placeholder="Enter your Phone ..." />
+          </div>
+        </div>
+
+        <div class="shipping-address">
+          <h2>Shipping address</h2>
+          <label for="name">Full name</label>
+          <div class="input-text">
+            <span class="material-symbols-outlined">
+              person_pin
+            </span>
+            <input id="name" type="text" placeholder="Rodney Cotton" />
+          </div>
+
+          <label for="address">Address</label>
+          <div class="input-text">
+            <span class="material-symbols-outlined">
+              home
+            </span>
+            <input id="address" type="text" placeholder="Your address.." />
+          </div>
+
+          <label for="city">City</label>
+          <div class="input-text">
+            <span class="material-symbols-outlined">
+              location_city
+            </span>
+            <input id="city" type="text" placeholder="Your city.." />
+          </div>
+          
+          <div class="city-country">
+            <label for="country">Country</label>
+            <label for="postal-code">Postal code</label>
+
+            <div class="input-text">
+              <span class="material-symbols-outlined">
+                location_city
+              </span>
+              <input id="country" type="text" placeholder="Your country.."list="countries" />
+              <datalist id="countries">
+                <option>Colombia</option>
+                <option>Peru</option>
+                <option>Venezuela</option>
+              </datalist>  
+            </div>
+
+            <div class="input-text">
+              <span class="material-symbols-outlined">
+                markunread_mailbox
+              </span>
+              <input id="postal-code" type="text" placeholder="Your postal code.." />
+            </div>
+
+          </div>
+
+
+        </div>
+        <label class="checkbox">
+          <input type="checkbox" name="save-information" />
+          Save this information for next time. 
+        </label>
+        <div class="shopping-button">
+          <button>Continue</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    Created by <a href="https://devchallenges.io/portfolio/juankrlos861122">Juankrlos861122</a> - devChallenges.io
+  </footer>
+</body>
+</html>
