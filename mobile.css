@@ -115,6 +115,7 @@ h1 {
             background-color: transparent;
             border: none;
             text-align: center;
+            -moz-appearance:textfield;
         
             font-family: var(--font-Montserrat);
             font-size: 1.6rem;
@@ -122,10 +123,16 @@ h1 {
             line-height: 2rem;
         }
 
+        .number-input .quantity::-webkit-inner-spin-button,
+        .number-input .quantity::-webkit-outer-spin-button {
+            -webkit-appearance: none; 
+        }
+
         .number-input>a {
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
         }
 
 .cart-shipping {
@@ -189,6 +196,7 @@ form {
     height: 40px;
     padding-inline-start: 8px;
 
+    outline: none;
     border-inline-start: none;
     border: none;
     border-radius: 0 12px 12px 0;
